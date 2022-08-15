@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on My Blog</title><link>https://blog.nishithpisadev.ml/posts/</link><description>Recent content in Posts on My Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nishith P</copyright><lastBuildDate>Mon, 06 Sep 2021 16:29:47 +0530</lastBuildDate><atom:link href="https://blog.nishithpisadev.ml/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Solving one of the world's most pressing problems..</title><link>https://blog.nishithpisadev.ml/posts/plastic-analyser/plastic-analyser/</link><pubDate>Mon, 06 Sep 2021 16:29:47 +0530</pubDate><guid>https://blog.nishithpisadev.ml/posts/plastic-analyser/plastic-analyser/</guid><description>Plastic Analyser ─ Nishith P Overview This idea is a Google Cloud AutoML Vision / Teachablemachine by Google project will allow users to classify a given mixture of plastic wastes into Recycle Grade # 1,2,3,4,5,6 &amp;amp; 7 for ease of recycling and saving time.This would indirectly help in protecting the environment from the adverse effects of plastic pollution.
-Introduction Plastic recycling is the process of recovering scrap or waste plastic and reprocessing the material into useful products.</description><content>&lt;p>&lt;img src="./assets/Plastic_Analyser.png" alt="Plastic Analyser">&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on My Blog</title><link>https://blog.nishithpisadev.ml/posts/</link><description>Recent content in Posts on My Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nishith P</copyright><lastBuildDate>Mon, 06 Sep 2021 16:29:47 +0530</lastBuildDate><atom:link href="https://blog.nishithpisadev.ml/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Solving one of the world's most pressing problems..</title><link>https://blog.nishithpisadev.ml/posts/plastic-analyser/plastic-analyser/</link><pubDate>Mon, 06 Sep 2021 16:29:47 +0530</pubDate><guid>https://blog.nishithpisadev.ml/posts/plastic-analyser/plastic-analyser/</guid><description>![Plastic Analyser](/Plastic Analyser/Plastic_Analyser.png)
+Plastic Analyser ─ Nishith P Overview This idea is a Google Cloud AutoML Vision / Teachablemachine by Google project will allow users to classify a given mixture of plastic wastes into Recycle Grade # 1,2,3,4,5,6 &amp;amp; 7 for ease of recycling and saving time.This would indirectly help in protecting the environment from the adverse effects of plastic pollution.
+Introduction Plastic recycling is the process of recovering scrap or waste plastic and reprocessing the material into useful products.</description><content>&lt;p>![Plastic Analyser](/Plastic Analyser/Plastic_Analyser.png)&lt;/p>
 &lt;h1 id="plastic-analyser">Plastic Analyser&lt;/h1>
 &lt;h2 id="heading">─&lt;/h2>
 &lt;h3 id="nishith-p">Nishith P&lt;/h3>
@@ -21,8 +22,8 @@ material. So, even recycled plastic has new plastic material added in. The same 
 &lt;p>plastic can only be recycled about 2-3 times before its quality decreases to the point
 where it can no longer be used.&lt;/p>
 &lt;h2 id="grades-of-plastic-based-on-resin-number">Grades of Plastic (Based on Resin Number)&lt;/h2>
-&lt;p>&lt;img src="./assets/PA_Table_1.png" alt="PA Table 1">&lt;/p>
-&lt;p>&lt;img src="./assets/PA_Table_2.png" alt="PA Table 2">&lt;/p>
+&lt;p>![PA Table 1](/Plastic Analyser/PA_Table_1.png)&lt;/p>
+&lt;p>![PA Table 2](/Plastic Analyser/PA_Table_2.png)&lt;/p>
 &lt;h2 id="method-of-recycling-ideal-case">Method of Recycling (ideal case)&lt;/h2>
 &lt;p>Before recycling, most plastics are sorted according to their resin type. In the past,
 plastic reclaimers used the resin identification code(RIC), a method of categorization of
