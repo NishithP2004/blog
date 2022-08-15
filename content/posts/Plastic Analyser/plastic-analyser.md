@@ -47,9 +47,9 @@ where it can no longer be used.
 
 ## Grades of Plastic (Based on Resin Number)
 
-![PA Table 1](https://github.com/NishithP2004/blog/blob/aa27820c2b6cd639de1f6088790543156e9fd7b2/images/PA_Table_1.png)
+![PA Table 1](./assets/PA_Table_1.png)
 
-![PA Table 2](https://github.com/NishithP2004/blog/blob/aa27820c2b6cd639de1f6088790543156e9fd7b2/images/PA_Table_2.png)
+![PA Table 2](./assets/PA_Table_2.png)
 
 ## Method of Recycling (ideal case)
 
