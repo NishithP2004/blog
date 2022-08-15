@@ -13,7 +13,7 @@ hideComments = false
 Toc = true
 +++
 
-![Plastic Analyser](images/Plastic_Analyser.png)
+![Plastic Analyser](/Plastic Analyser/images/Plastic_Analyser.png)
 
 # Plastic Analyser
 
@@ -47,9 +47,9 @@ where it can no longer be used.
 
 ## Grades of Plastic (Based on Resin Number)
 
-![PA Table 1](images/PA_Table_1.png)
+![PA Table 1](/Plastic Analyser/images/PA_Table_1.png)
 
-![PA Table 2](images/PA_Table_2.png)
+![PA Table 2](/Plastic Analyser/images/PA_Table_2.png)
 
 ## Method of Recycling (ideal case)
 
