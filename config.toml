@@ -1,4 +1,4 @@
-baseurl = "https://nishithp2004.github.io/blog"
+baseurl = "https://blog.nishithpisadev.ml"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
