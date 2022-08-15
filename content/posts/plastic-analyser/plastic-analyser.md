@@ -3,7 +3,7 @@ title = "Solving one of the world's most pressing problems.."
 date = "2021-09-06T16:29:47+05:30"
 author = "Nishith P"
 authorTwitter = "NishithP2004" #do not include @
-cover = "cover.png"
+cover = "/posts/plastic-analyser/cover.png"
 tags = ["Machine Learning", "AI"]
 keywords = ["Plastic Analyser", ""]
 description = ""
@@ -13,7 +13,7 @@ hideComments = false
 Toc = true
 +++
 
-![Plastic Analyser](/images/Plastic_Analyser.png)
+![Plastic Analyser](/posts/plastic-analyser/images/Plastic_Analyser.png)
 
 # Plastic Analyser
 
@@ -47,9 +47,9 @@ where it can no longer be used.
 
 ## Grades of Plastic (Based on Resin Number)
 
-![PA Table 1](/images/PA_Table_1.png)
+![PA Table 1](/posts/plastic-analyser/images/PA_Table_1.png)
 
-![PA Table 2](/images/PA_Table_2.png)
+![PA Table 2](/posts/plastic-analyser/images/PA_Table_2.png)
 
 ## Method of Recycling (ideal case)
 
