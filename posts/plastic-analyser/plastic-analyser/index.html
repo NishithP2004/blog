@@ -1,0 +1,80 @@
+<!doctype html><html lang=en><head><title>Solving one of the world's most pressing problems.. :: My Blog</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Plastic Analyser ─ Nishith P Overview This idea is a Google Cloud AutoML Vision / Teachablemachine by Google project will allow users to classify a given mixture of plastic wastes into Recycle Grade # 1,2,3,4,5,6 &amp;amp; 7 for ease of recycling and saving time.This would indirectly help in protecting the environment from the adverse effects of plastic pollution.
+Introduction Plastic recycling is the process of recovering scrap or waste plastic and reprocessing the material into useful products."><meta name=keywords content="Plastic Analyser,"><meta name=robots content="noodp"><link rel=canonical href=/posts/plastic-analyser/plastic-analyser/><link rel=stylesheet href=/assets/style.css><link rel=stylesheet href=/assets/pink.css><link rel=apple-touch-icon href=/img/apple-touch-icon-192x192.png><link rel="shortcut icon" href=/favicon.ico><meta name=twitter:card content="summary"><meta name=twitter:site content><meta name=twitter:creator content="NishithP2004"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="og:title" content="Solving one of the world's most pressing problems.."><meta property="og:description" content="Plastic Analyser ─ Nishith P Overview This idea is a Google Cloud AutoML Vision / Teachablemachine by Google project will allow users to classify a given mixture of plastic wastes into Recycle Grade # 1,2,3,4,5,6 &amp;amp; 7 for ease of recycling and saving time.This would indirectly help in protecting the environment from the adverse effects of plastic pollution.
+Introduction Plastic recycling is the process of recovering scrap or waste plastic and reprocessing the material into useful products."><meta property="og:url" content="/posts/plastic-analyser/plastic-analyser/"><meta property="og:site_name" content="My Blog"><meta property="og:image" content="/"><meta property="og:image:width" content="2048"><meta property="og:image:height" content="1024"><meta property="article:published_time" content="2021-09-06 16:29:47 +0530 +0530"></head><body class=pink><div class="container full headings--one-size"><header class=header><div class=header__inner><div class=header__logo><a href=/><div class=logo>My Blog</div></a></div><div class=menu-trigger>menu</div></div><nav class=menu><ul class="menu__inner menu__inner--desktop"><li><a href=https://nishithp2004.github.io>About</a></li></ul><ul class="menu__inner menu__inner--mobile"><li><a href=https://nishithp2004.github.io>About</a></li></ul></nav></header><div class=content><div class=post><h1 class=post-title><a href=/posts/plastic-analyser/plastic-analyser/>Solving one of the world&rsquo;s most pressing problems..</a></h1><div class=post-meta><span class=post-date>2021-09-06
+[Updated: 2021-09-06]</span>
+<span class=post-author>:: Nishith P</span>
+<span class=post-reading-time>:: 6 min read (1134 words)</span></div><span class=post-tags>#<a href=/tags/machine-learning/>Machine Learning</a>&nbsp;
+#<a href=/tags/ai/>AI</a>&nbsp;</span><div class=table-of-contents><h2>Table of Contents</h2><nav id=TableOfContents><ul><li><a href=#heading>─</a><ul><li><a href=#nishith-p>Nishith P</a></li></ul></li><li><a href=#overview>Overview</a></li><li><a href=#introduction>Introduction</a></li><li><a href=#grades-of-plastic-based-on-resin-number>Grades of Plastic (Based on Resin Number)</a></li><li><a href=#method-of-recycling-ideal-case>Method of Recycling (ideal case)</a></li><li><a href=#problem>Problem</a></li><li><a href=#solution>Solution</a></li><li><a href=#data-collection>Data Collection</a></li><li><a href=#next-steps>Next Steps</a></li><li><a href=#testing>Testing</a><ul><li></li><li><a href=#-nishith-p>© Nishith P</a></li></ul></li></ul></nav></div><div class=post-content><div><p><img src=./assets/Plastic_Analyser.png alt="Plastic Analyser"></p><h1 id=plastic-analyser>Plastic Analyser<a href=#plastic-analyser class=hanchor arialabel=Anchor>&#8983;</a></h1><h2 id=heading>─<a href=#heading class=hanchor arialabel=Anchor>&#8983;</a></h2><h3 id=nishith-p>Nishith P<a href=#nishith-p class=hanchor arialabel=Anchor>&#8983;</a></h3><h2 id=overview>Overview<a href=#overview class=hanchor arialabel=Anchor>&#8983;</a></h2><p>This idea is a <strong>Google Cloud AutoML Vision / Teachablemachine by Google</strong> project
+will allow users to classify a given mixture of plastic wastes into Recycle Grade #
+1,2,3,4,5,6 & 7 for ease of recycling and saving time.This would indirectly help in
+protecting the environment from the adverse effects of plastic pollution.</p><h2 id=introduction>Introduction<a href=#introduction class=hanchor arialabel=Anchor>&#8983;</a></h2><p>Plastic recycling is the process of recovering scrap or waste plastic and reprocessing the
+material into useful products.</p><p>When different types of plastics are melted together, they tend to phase-separate, like
+oil and water, and set in these layers. The phase boundaries cause structural weakness
+in the resulting material, meaning that polymer blends are useful in only limited
+applications. The two most widely manufactured plastics, polypropylene and
+polyethene, behave this way, which limits their utility for recycling. Each time plastic is
+recycled, additional virgin materials must be added to help improve the integrity of the
+material. So, even recycled plastic has new plastic material added in. The same piece of</p><p>plastic can only be recycled about 2-3 times before its quality decreases to the point
+where it can no longer be used.</p><h2 id=grades-of-plastic-based-on-resin-number>Grades of Plastic (Based on Resin Number)<a href=#grades-of-plastic-based-on-resin-number class=hanchor arialabel=Anchor>&#8983;</a></h2><p><img src=https://github.com/NishithP2004/blog/blob/aa27820c2b6cd639de1f6088790543156e9fd7b2/images/PA_Table_1.png alt="PA Table 1"></p><p><img src=https://github.com/NishithP2004/blog/blob/aa27820c2b6cd639de1f6088790543156e9fd7b2/images/PA_Table_2.png alt="PA Table 2"></p><h2 id=method-of-recycling-ideal-case>Method of Recycling (ideal case)<a href=#method-of-recycling-ideal-case class=hanchor arialabel=Anchor>&#8983;</a></h2><p>Before recycling, most plastics are sorted according to their resin type. In the past,
+plastic reclaimers used the resin identification code(RIC), a method of categorization of
+polymer types, which was developed by the Society of the Plastics Industry in
+1988.[citation needed] Polyethylene terephthalate, commonly referred to as PET, for
+instance has a resin code of 1.</p><p>Some plastic products are also separated by colour before they are recycled. The plastic
+recyclables are then shredded. These shredded fragments then undergo processes to
+eliminate impurities like paper labels. This material is melted and often extruded into
+the form of pellets which are then used to manufacture other products. Recycling also
+keeps plastic out of landfills where it can take 500years to break down.</p><p><strong>1.Thermal Polymerisation:</strong></p><p>Scientists have estimated that the potential commodity value of waste plastic may be in
+excess of $300 per ton when used in process pathways yielding high-value chemical
+products or to produce electricity inefficient IGCC(Integrated Gasification Combined
+Cycle) processes.</p><p><strong>2.Waste Plastic Pyrolysis to fuel oil:</strong></p><p>Plastic pyrolysis can convert petroleum-based waste streams such as plastics into fuels
+and carbons.
+Given below is the list of suitable plastic raw materials for pyrolysis:</p><pre tabindex=0><code>● Mixed plastic (HDPE, LDPE, PE, PP, Nylon, Teflon, PS, ABS, FRP etc.)
+● Mixed-waste plastic from waste paper mill
+● Multi-layered plastic
+</code></pre><p><strong>3.Heat Compression:</strong></p><p>Heat compression takes all unsorted, cleaned plastic in all forms, from soft plastic bags
+to hard industrial waste, and mixes the load in tumblers(large rotating drums
+resembling giant clothes dryers). The most obvious benefit to this method is that all
+plastic is recyclable, not just matching forms. However, criticism rises from the energy
+costs of rotating the drums and heating the post-melt pipes.</p><p><strong>4.Distributed Recycling:</strong></p><p>For some waste plastics, technical devices called recycle bots enable a form of
+distributed recycling. Preliminary life-cycle analysis(LCA) indicates that such distributed
+recycling of HDPE to make filament of 3D printers in rural regions is energetically
+favourable to either using virgin resin or conventional recycling processes because of
+reductions in transportation energy.</p><p><strong>5.Other Processes:</strong></p><p>A process has also been developed in which many kinds of plastic can be used as a
+carbon source in the recycling of scrap steel. There is also a possibility of mixed
+recycling of different plastics, which does not require their separation. It is called
+compatibilization and requires the use of special chemical bridging agents compatibilizers.
+It can help to keep the quality of recycled material and to skip often expensive and
+inefficient preliminary scanning of waste plastics streams and their
+separation/purification.</p><h2 id=problem>Problem<a href=#problem class=hanchor arialabel=Anchor>&#8983;</a></h2><p>The main problem is the classification of plastic into the <strong><em>Grades of Plastic</em></strong> mentioned
+above, as it is a time consuming and manual process. It requires large manual labour
+and the time is taken to recycle the plastic after classification is also quite large I.e. 2x the
+time will be required to recycle the plastic.</p><p>Each household contains plastic in each and every node. Assuming that the average
+Indian household uses 1kg of plastic every month and throws away 95% of it after usage
+such as plastic bags, pens, shampoo bottles, etc. Then the amount of time required to
+classify & recycle single households scrap is itself quite significant and hence most
+treatment facilities employ the simplest & fastest option of directly incinerating it or any
+Another similar easy & fast process results in the production of harmful gases that
+can cause harm to the environment.</p><p>The toxic gaseous chemicals released during the burning of plastic include nitrogen oxides,
+sulfur dioxide, volatile organic chemicals (VOCs), and polycyclic organic matter (POMs - a
+solid residue leftover). Burning plastic also releases heavy metals and toxic chemicals
+such as dioxin.
+All of these would not be released by burning plastic. It depends on the kind of plastic
+burnt.
+PVC - polyvinyl chloride, releases HCl if it is burnt.</p><h2 id=solution>Solution<a href=#solution class=hanchor arialabel=Anchor>&#8983;</a></h2><p>I have created an ML project which I believe could be integrated into a machine which
+would automatically classify the plastic into 7 grades based on the plastic codes as
+mentioned above.</p><p>This would simplify the process by 50% and therefore more amounts of plastic wastes
+can be classified & recycled into usable products.</p><p>I call this application as “ <strong><em>Plastic Analyser”</em></strong> which I hope will be useful essentially to
+reducing the number of plastic wastes in the surroundings such as in the roadsides,
+lakes, etc and would also be quite essential in protecting the environment from the
+adverse effects of plastic pollution.</p><p>This app is aimed at being a support to the theme which is <strong>“Waste Management”.</strong> This
+the application supports the theme by easier classification of plastic, excessive incineration
+would be prevented, thereby reducing the number of harmful gases released into the
+the environment due to its burning.</p><p>Alternatively, it can also be used by youngsters trying to understand the concept of
+recycling of plastic.</p><h2 id=data-collection>Data Collection<a href=#data-collection class=hanchor arialabel=Anchor>&#8983;</a></h2><p>I have used a total of 3000 images for 7 labels.</p><p>I collected the data required from my surroundings since every household is filled with
+lots of plastic be it toothpaste to writing pads;a few images of plastic articles which were
+not present or for better picture clarity were taken from the Internet.</p><h2 id=next-steps>Next Steps<a href=#next-steps class=hanchor arialabel=Anchor>&#8983;</a></h2><p>The next step is to integrate it into an Android app and allow community-based data
+uploads.</p><h2 id=testing>Testing<a href=#testing class=hanchor arialabel=Anchor>&#8983;</a></h2><h4 id=try-this-awesome-project-for-yourself-herehttpsnishithptechplastic-analyser>Try this awesome project for yourself <a href=https://nishithp.tech/Plastic-Analyser/>here</a>.<a href=#try-this-awesome-project-for-yourself-herehttpsnishithptechplastic-analyser class=hanchor arialabel=Anchor>&#8983;</a></h4><h4 id=or>Or<a href=#or class=hanchor arialabel=Anchor>&#8983;</a></h4><p><a href=https://nishithp2004.github.io/Plastic-Analyser/>https://nishithp2004.github.io/Plastic-Analyser/</a></p><p><strong>Instructions:</strong> Hold up a plastic article such as a water bottle to know its grade. (Works
+Best in Desktop or PC)</p><p>Note: The project is still in development and may not be fully accurate, since the dataset
+The size used was small.</p><h3 id=-nishith-p>© Nishith P<a href=#-nishith-p class=hanchor arialabel=Anchor>&#8983;</a></h3></div></div><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//blog-2004.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div></div><footer class=footer><div class=footer__inner><div class="copyright copyright--user"><span>Nishith P</span>
+<span>:: Theme made by <a href=https://twitter.com/panr>panr</a></span></div></div></footer><script src=/assets/main.js></script>
+<script src=/assets/prism.js></script></div></body></html>
