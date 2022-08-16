@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Blog</title><link>https://blog.nishithpisadev.ml/</link><description>Recent content on My Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nishith P</copyright><lastBuildDate>Mon, 06 Sep 2021 16:29:47 +0530</lastBuildDate><atom:link href="https://blog.nishithpisadev.ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Solving one of the world's most pressing problems..</title><link>https://blog.nishithpisadev.ml/posts/plastic-analyser/plastic-analyser/</link><pubDate>Mon, 06 Sep 2021 16:29:47 +0530</pubDate><guid>https://blog.nishithpisadev.ml/posts/plastic-analyser/plastic-analyser/</guid><description>Plastic Analyser ─ Nishith P Overview This idea is a Google Cloud AutoML Vision / Teachablemachine by Google project will allow users to classify a given mixture of plastic wastes into Recycle Grade # 1,2,3,4,5,6 &amp;amp; 7 for ease of recycling and saving time.This would indirectly help in protecting the environment from the adverse effects of plastic pollution.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Blog</title><link>https://blog.nishithpisadev.ml/</link><description>Recent content on My Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Nishith P</copyright><lastBuildDate>Wed, 29 Dec 2021 10:00:00 +0530</lastBuildDate><atom:link href="https://blog.nishithpisadev.ml/index.xml" rel="self" type="application/rss+xml"/><item><title>Hacking Microsoft Forms</title><link>https://blog.nishithpisadev.ml/posts/hacking-msforms/hacking-msforms/</link><pubDate>Wed, 29 Dec 2021 10:00:00 +0530</pubDate><guid>https://blog.nishithpisadev.ml/posts/hacking-msforms/hacking-msforms/</guid><description>Hacking Microsoft Forms From the growth of Online learning during this pandemic — students, researchers have been on a hunt for hacks on Microsoft Forms which could give them an unfair advantage in their tests, pop quizzes etc.
+There have been many on YouTube who have claimed to have found such treasures by inspecting the source code, trying other tricks, etc but it&amp;rsquo;s all just clickbait to attract viewers.
+What I am going to share today will change all that…</description><content>&lt;h1 id="hacking-microsoft-forms">Hacking Microsoft Forms&lt;/h1>
+&lt;p>&lt;img src="https://miro.medium.com/max/1400/0*tj0vXkPS5NPeU9sw.png" alt="Microsoft Forms">&lt;/p>
+&lt;p>From the growth of Online learning during this pandemic — students, researchers have been on a hunt for hacks on &lt;strong>Microsoft Forms&lt;/strong> which could give them an unfair advantage in their tests, pop quizzes etc.&lt;/p>
+&lt;p>There have been many on YouTube who have claimed to have found such &lt;em>treasures&lt;/em> by inspecting the source code, trying other tricks, etc but it&amp;rsquo;s all just clickbait to attract viewers.&lt;/p>
+&lt;p>What I am going to share today will change all that…&lt;/p>
+&lt;p>As all of you may have read from the subject line of this story, yes I have found a way to &lt;strong>&lt;em>hack&lt;/em>&lt;/strong> Microsoft Forms but its not quite what you may expect —&lt;/p>
+&lt;h1 id="summary">Summary&lt;/h1>
+&lt;ul>
+&lt;li>Whenever a form is submitted, an API POST request is made to the &lt;strong>&lt;em>/formapi/api/${API_Key}/users/${User_Key}/forms(${FormID})/responses&lt;/em>&lt;/strong> endpoint&lt;/li>
+&lt;li>By intercepting the POST request, a user/attacker can put a new entry / null string, thereby bypassing the required field / adding a new option completely.&lt;/li>
+&lt;li>Due to the absence of Server-side checks, the same reflects in the forms responses available to the form owner.&lt;/li>
+&lt;/ul>
+&lt;h1 id="intercepted-payload">Intercepted Payload&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{&lt;span style="color:#960050;background-color:#1e0010">“startDate”:”2021–12–02T18:38:36.784Z”,”submitDate”:”2021–12–02T18:38:40.820Z”,”answers”:”\[{\\”questionId\\”:\\\[REDACTED\]&lt;/span>}&lt;span style="color:#960050;background-color:#1e0010">,\\”answer&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">\\”:\\$&lt;/span>{&lt;span style="color:#960050;background-color:#1e0010">New&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">Option&lt;/span>} &lt;span style="color:#960050;background-color:#1e0010">OR&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">\\”}\]”}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="summary--translated-for-layman">Summary — Translated For Layman&lt;/h1>
+&lt;ul>
+&lt;li>When a user submits a form, the webpage / the form (Client) sends a message to the server saying that this user has submitted “X” as the response for a particular question with a &lt;strong>unique id&lt;/strong> “Y” and the server saves the same in its database which is made available for the form owner to view as the responses.&lt;/li>
+&lt;li>By acting as a middle man and intercepting the message, the attacker can change the message sent by the webpage to say that the particular user has sent “Z” as the response for a particular MCQ based question where Z is &lt;em>not in the options available&lt;/em> / is an &lt;strong>invalid&lt;/strong> input.&lt;/li>
+&lt;li>Due to the absence of server-side checks to confirm whether the option is one of the valid options, one can manipulate &lt;strong>Ratings&lt;/strong>, &lt;strong>Net Promoter Scores&lt;/strong>, and also add a new Option in an &lt;strong>MCQ / Checkbox / Dropdown&lt;/strong> based Question.&lt;/li>
+&lt;li>The same gets saved in the Database and is sent to the Form owner as a part of the set of responses.&lt;/li>
+&lt;li>One problem with this attack that limits its impacts is that the attacker can manipulate only his / her response and not other users responses.&lt;/li>
+&lt;/ul>
+&lt;h1 id="attack-scenario">Attack Scenario&lt;/h1>
+&lt;ul>
+&lt;li>When corporates use this form for their internal competition for employees, any misuse may bring in reputational issues for the corporates and in turn, it will harm Microsoft’s brand image,&lt;/li>
+&lt;li>Large corporates running a certain campaign for the public through these forms can face huge revenue loss and reputational harm if there is scope for misuse through options beyond the listed ones.&lt;/li>
+&lt;li>Microsoft forms are predominantly used in schools for the conduct of examinations. Any potential attack or misuse can play havoc with students’ lives and can cause irreparable loss for the students and their families.&lt;/li>
+&lt;/ul>
+&lt;p>This Bug affects both quizzes and normal Forms.&lt;/p>
+&lt;h1 id="steps-to-reproduce-bug">Steps to Reproduce Bug&lt;/h1>
+&lt;ul>
+&lt;li>Create a new Form on MS Forms.&lt;/li>
+&lt;li>Open the Form.&lt;/li>
+&lt;li>Follow the steps as shown in the POC attached below.&lt;/li>
+&lt;/ul>
+&lt;h1 id="poc-proof-of-concept">PoC (Proof Of Concept)&lt;/h1>
+&lt;!-- raw HTML omitted -->
+&lt;p>&lt;strong>&lt;em>Disclaimer&lt;/em>&lt;/strong>&lt;em>: By reading this article, you agree to use this information only for educational purposes and not to cheat in your tests/pop quizzes and I, as the author of this article, take no responsibility for any ill practices from your end.&lt;/em>&lt;/p></content></item><item><title>Solving one of the world's most pressing problems..</title><link>https://blog.nishithpisadev.ml/posts/plastic-analyser/plastic-analyser/</link><pubDate>Mon, 06 Sep 2021 16:29:47 +0530</pubDate><guid>https://blog.nishithpisadev.ml/posts/plastic-analyser/plastic-analyser/</guid><description>Plastic Analyser ─ Nishith P Overview This idea is a Google Cloud AutoML Vision / Teachablemachine by Google project will allow users to classify a given mixture of plastic wastes into Recycle Grade # 1,2,3,4,5,6 &amp;amp; 7 for ease of recycling and saving time.This would indirectly help in protecting the environment from the adverse effects of plastic pollution.
 Introduction Plastic recycling is the process of recovering scrap or waste plastic and reprocessing the material into useful products.</description><content>&lt;p>&lt;img src="https://blog.nishithpisadev.ml/posts/plastic-analyser/images/Plastic_Analyser.png" alt="Plastic Analyser">&lt;/p>
 &lt;h1 id="plastic-analyser">Plastic Analyser&lt;/h1>
 &lt;h2 id="heading">─&lt;/h2>
@@ -117,43 +156,4 @@ uploads.&lt;/p>
 Best in Desktop or PC)&lt;/p>
 &lt;p>Note: The project is still in development and may not be fully accurate, since the dataset
 The size used was small.&lt;/p>
-&lt;h3 id="-nishith-p">© Nishith P&lt;/h3></content></item><item><title/><link>https://blog.nishithpisadev.ml/posts/hacking-msforms/hacking-msforms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.nishithpisadev.ml/posts/hacking-msforms/hacking-msforms/</guid><description>Hacking Microsoft Forms From the growth of Online learning during this pandemic — students, researchers have been on a hunt for hacks on Microsoft Forms which could give them an unfair advantage in their tests, pop quizzes etc.
-There have been many on YouTube who have claimed to have found such treasures by inspecting the source code, trying other tricks, etc but it&amp;rsquo;s all just clickbait to attract viewers.
-What I am going to share today will change all that…</description><content>&lt;h1 id="hacking-microsoft-forms">Hacking Microsoft Forms&lt;/h1>
-&lt;p>&lt;img src="https://miro.medium.com/max/1400/0*tj0vXkPS5NPeU9sw.png" alt="Microsoft Forms">&lt;/p>
-&lt;p>From the growth of Online learning during this pandemic — students, researchers have been on a hunt for hacks on &lt;strong>Microsoft Forms&lt;/strong> which could give them an unfair advantage in their tests, pop quizzes etc.&lt;/p>
-&lt;p>There have been many on YouTube who have claimed to have found such &lt;em>treasures&lt;/em> by inspecting the source code, trying other tricks, etc but it&amp;rsquo;s all just clickbait to attract viewers.&lt;/p>
-&lt;p>What I am going to share today will change all that…&lt;/p>
-&lt;p>As all of you may have read from the subject line of this story, yes I have found a way to &lt;strong>&lt;em>hack&lt;/em>&lt;/strong> Microsoft Forms but its not quite what you may expect —&lt;/p>
-&lt;h1 id="summary">Summary&lt;/h1>
-&lt;ul>
-&lt;li>Whenever a form is submitted, an API POST request is made to the &lt;strong>&lt;em>/formapi/api/${API_Key}/users/${User_Key}/forms(${FormID})/responses&lt;/em>&lt;/strong> endpoint&lt;/li>
-&lt;li>By intercepting the POST request, a user/attacker can put a new entry / null string, thereby bypassing the required field / adding a new option completely.&lt;/li>
-&lt;li>Due to the absence of Server-side checks, the same reflects in the forms responses available to the form owner.&lt;/li>
-&lt;/ul>
-&lt;h1 id="intercepted-payload">Intercepted Payload&lt;/h1>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-json" data-lang="json">&lt;span style="display:flex;">&lt;span>{&lt;span style="color:#960050;background-color:#1e0010">“startDate”:”2021–12–02T18:38:36.784Z”,”submitDate”:”2021–12–02T18:38:40.820Z”,”answers”:”\[{\\”questionId\\”:\\\[REDACTED\]&lt;/span>}&lt;span style="color:#960050;background-color:#1e0010">,\\”answer&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">\\”:\\$&lt;/span>{&lt;span style="color:#960050;background-color:#1e0010">New&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">Option&lt;/span>} &lt;span style="color:#960050;background-color:#1e0010">OR&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">\\”}\]”}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="summary--translated-for-layman">Summary — Translated For Layman&lt;/h1>
-&lt;ul>
-&lt;li>When a user submits a form, the webpage / the form (Client) sends a message to the server saying that this user has submitted “X” as the response for a particular question with a &lt;strong>unique id&lt;/strong> “Y” and the server saves the same in its database which is made available for the form owner to view as the responses.&lt;/li>
-&lt;li>By acting as a middle man and intercepting the message, the attacker can change the message sent by the webpage to say that the particular user has sent “Z” as the response for a particular MCQ based question where Z is &lt;em>not in the options available&lt;/em> / is an &lt;strong>invalid&lt;/strong> input.&lt;/li>
-&lt;li>Due to the absence of server-side checks to confirm whether the option is one of the valid options, one can manipulate &lt;strong>Ratings&lt;/strong>, &lt;strong>Net Promoter Scores&lt;/strong>, and also add a new Option in an &lt;strong>MCQ / Checkbox / Dropdown&lt;/strong> based Question.&lt;/li>
-&lt;li>The same gets saved in the Database and is sent to the Form owner as a part of the set of responses.&lt;/li>
-&lt;li>One problem with this attack that limits its impacts is that the attacker can manipulate only his / her response and not other users responses.&lt;/li>
-&lt;/ul>
-&lt;h1 id="attack-scenario">Attack Scenario&lt;/h1>
-&lt;ul>
-&lt;li>When corporates use this form for their internal competition for employees, any misuse may bring in reputational issues for the corporates and in turn, it will harm Microsoft’s brand image,&lt;/li>
-&lt;li>Large corporates running a certain campaign for the public through these forms can face huge revenue loss and reputational harm if there is scope for misuse through options beyond the listed ones.&lt;/li>
-&lt;li>Microsoft forms are predominantly used in schools for the conduct of examinations. Any potential attack or misuse can play havoc with students’ lives and can cause irreparable loss for the students and their families.&lt;/li>
-&lt;/ul>
-&lt;p>This Bug affects both quizzes and normal Forms.&lt;/p>
-&lt;h1 id="steps-to-reproduce-bug">Steps to Reproduce Bug&lt;/h1>
-&lt;ul>
-&lt;li>Create a new Form on MS Forms.&lt;/li>
-&lt;li>Open the Form.&lt;/li>
-&lt;li>Follow the steps as shown in the POC attached below.&lt;/li>
-&lt;/ul>
-&lt;h1 id="poc-proof-of-concept">PoC (Proof Of Concept)&lt;/h1>
-&lt;!-- raw HTML omitted -->
-&lt;p>&lt;strong>&lt;em>Disclaimer&lt;/em>&lt;/strong>&lt;em>: By reading this article, you agree to use this information only for educational purposes and not to cheat in your tests/pop quizzes and I, as the author of this article, take no responsibility for any ill practices from your end.&lt;/em>&lt;/p></content></item></channel></rss>
+&lt;h3 id="-nishith-p">© Nishith P&lt;/h3></content></item></channel></rss>
