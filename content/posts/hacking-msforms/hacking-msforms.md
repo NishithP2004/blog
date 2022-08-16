@@ -1,3 +1,18 @@
++++
+title = "Hacking Microsoft Forms"
+date = "2021-12-29T10:00:00+05:30"
+author = "Nishith P"
+authorTwitter = "NishithP2004" #do not include @
+cover = "/posts/plastic-analyser/cover.png"
+tags = ["Bug Bounty", "MS Forms", "Ethical Hacking"]
+keywords = ["Hacking MS Forms", ""]
+description = ""
+showFullContent = false
+readingTime = true
+hideComments = false
+Toc = true
++++
+
 Hacking Microsoft Forms
 =======================
 
