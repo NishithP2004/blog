@@ -36,7 +36,7 @@ What I am going to share today will change all that…</description><content>&lt
 &lt;li>Follow the steps as shown in the POC attached below.&lt;/li>
 &lt;/ul>
 &lt;h1 id="poc-proof-of-concept">PoC (Proof Of Concept)&lt;/h1>
-&lt;!-- raw HTML omitted -->
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=rg2zylBbxUQ">&lt;img src="https://img.youtube.com/vi/rg2zylBbxUQ/0.jpg" alt="Proof Of Concept">&lt;/a>&lt;/p>
 &lt;p>&lt;strong>&lt;em>Disclaimer&lt;/em>&lt;/strong>&lt;em>: By reading this article, you agree to use this information only for educational purposes and not to cheat in your tests/pop quizzes and I, as the author of this article, take no responsibility for any ill practices from your end.&lt;/em>&lt;/p></content></item><item><title>Solving one of the world's most pressing problems..</title><link>https://blog.nishithpisadev.ml/posts/plastic-analyser/plastic-analyser/</link><pubDate>Mon, 06 Sep 2021 16:29:47 +0530</pubDate><guid>https://blog.nishithpisadev.ml/posts/plastic-analyser/plastic-analyser/</guid><description>Plastic Analyser ─ Nishith P Overview This idea is a Google Cloud AutoML Vision / Teachablemachine by Google project will allow users to classify a given mixture of plastic wastes into Recycle Grade # 1,2,3,4,5,6 &amp;amp; 7 for ease of recycling and saving time.This would indirectly help in protecting the environment from the adverse effects of plastic pollution.
 Introduction Plastic recycling is the process of recovering scrap or waste plastic and reprocessing the material into useful products.</description><content>&lt;p>&lt;img src="https://blog.nishithpisadev.ml/posts/plastic-analyser/images/Plastic_Analyser.png" alt="Plastic Analyser">&lt;/p>
 &lt;h1 id="plastic-analyser">Plastic Analyser&lt;/h1>
