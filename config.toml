@@ -1,4 +1,4 @@
-baseurl = "https://blog.nishithpisadev.ml"
+baseurl = "https://blog.nishithp.tech"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
